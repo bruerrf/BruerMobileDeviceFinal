@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wc4-6P-aJP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BruerFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jG0-9J-5am">
+                                <rect key="frame" x="20" y="146" width="374" height="716"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="64" id="gDw-Ro-NcG" customClass="TableViewCell" customModule="BruerFinalProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gDw-Ro-NcG" id="cRG-FZ-ejB">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="64"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2F1-G0-kAI">
+                                                    <rect key="frame" x="20" y="22" width="242" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mainText" destination="2F1-G0-kAI" id="g9G-a6-rsI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AO-zL-2kL">
+                                <rect key="frame" x="20" y="99" width="360" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Lehlo Blog">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="34" name="Chalkboard"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkw-cq-j0S">
+                                <rect key="frame" x="278" y="102" width="119" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Back to Home">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wc4-6P-aJP" kind="show" id="uyB-mY-MWc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cCC-QF-gdZ"/>
+                    <connections>
+                        <outlet property="tableData" destination="jG0-9J-5am" id="gah-gi-YS1"/>
+                        <segue destination="zOg-Js-Zb6" kind="show" identifier="link1" id="PW9-Yg-oY6"/>
+                        <segue destination="w2m-tQ-11P" kind="show" identifier="link2" id="FQH-8z-yaU"/>
+                        <segue destination="X8C-Tj-fsD" kind="show" identifier="link3" id="S7w-zv-2l4"/>
+                        <segue destination="iad-I0-Bwe" kind="show" identifier="link7" id="mIk-Do-T8R"/>
+                        <segue destination="56U-hL-G0K" kind="show" identifier="link6" id="fac-r6-f71"/>
+                        <segue destination="GNe-Ow-OTa" kind="show" identifier="link5" id="Ylr-KV-N5N"/>
+                        <segue destination="jB4-aK-FpR" kind="show" identifier="link4" id="Bih-SE-BDc"/>
+                        <segue destination="fY4-Ac-Qkr" kind="show" identifier="link8" id="V0s-zt-JIi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1442.0289855072465" y="49.553571428571423"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="kjd-0c-IUp">
+            <objects>
+                <viewController id="zOg-Js-Zb6" customClass="SecondViewController" customModule="BruerFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IQj-JN-ib7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JV9-FF-K5C">
+                                <rect key="frame" x="20" y="159" width="374" height="703"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Welcome to our blog!
+
+Join us as we embark on adventure! It has always been a dream of our’s to try out van life. This blog will cover all things van life: including van creation, tips for living on the road, working remotely, making money through blogs and social media, travel guides for trip locations, and of course a little bit about our personal lifestyles. 
+
+Who We Are:
+
+Lehlo is made of two main members: Rheo and Lilly (hence the name.) Rheo is a young, hairy, dairy addicted computer scientist. Lilly is a ski and snowboard instructor. Oh, and of course both are now website creators and blog writers! Rheo and Lilly both attended and graduated from Appalachian State University. Lilly got her bachelor’s in Social Work and Rheo in Computer Science. They met at a dry cleaners in Boone, North Carolina and have been inseparable since. They both had the intention of living in a van before they met each other. Now, they are an unstoppable team. 
+Lilly worked as a Data Specialist in a homeless shelter for a short time, but quickly discovered the sedentary life was not here for her. Lilly grew up in a rural town in western North Carolina. She comes from a conservative Southern Baptist Family… surprising, no? She has extensive experience bottle feeding neonatal kittens as she grew up working closely with a couple Humane Societies.  
+
+Rheo attended Engineer school before deciding to pursue computer science as a means to be able to travel long term.  His main interests are traveling and working on cars. Rheo grew up in a Neo-Luddite Bohemian family in an off the grid house in Florida keys.
+</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to our Blog!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpP-2U-eOj">
+                                <rect key="frame" x="20" y="101" width="355" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AD2-hX-lO7">
+                                <rect key="frame" x="297" y="111" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Home">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="homeLink" id="tAu-8x-oAb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aa3-Yl-uyN"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qS8-ay-Mqa"/>
+                    <connections>
+                        <segue destination="w2m-tQ-11P" kind="show" identifier="secondLink" id="VGP-7m-JPT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MPt-zI-3Hd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2182.608695652174" y="48.883928571428569"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="U8t-x1-oTz">
+            <objects>
+                <viewController id="w2m-tQ-11P" customClass="ThirdViewController" customModule="BruerFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HPy-10-LpT" customClass="ThirdViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chiang Mai, Thailand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWR-uB-f8U">
+                                <rect key="frame" x="20" y="113" width="353" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Prn-zl-1AA">
+                                <rect key="frame" x="20" y="161" width="374" height="701"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Once the ancient capital of the Lanna Kingdom, the city of Chiang Mai is the cultural and spiritual heart of Thailand. It has the perfect combination of nature, history, food and adventure.
+
+The old city of Chiang Mai is packed to the brim with golden temples, ancient sites, and bustling markets. But it feels more like a sleepy town, and it wonderfully charming and calm. And once you leave the city, you’ll find yourself surrounded by jungle-blanketed hills and rolling rice fields, where cottage craft industries still thrive and distinct temples dazzle.
+
+We began at the iconic Wat Phra Singh, the most impressive of temples within Chiang Mai’s Old City. Wat Phra Singh is located in the western part of the old city at the western end of Ratchadamnoen Road. The main attraction here is the elegantly decorated Lai Kam assembly hall and its restored murals depicting the lives of locals hundreds of years ago.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEQ-gY-Iin">
+                                <rect key="frame" x="297" y="118" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Home">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Boq-NH-nI4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rmS-u0-fOF"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.18823529411764706" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NFy-14-FbS"/>
+                    <connections>
+                        <segue destination="X8C-Tj-fsD" kind="show" identifier="thirdLink" id="UWu-Te-zIK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="41D-k3-SyJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2957.971014492754" y="48.883928571428569"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="EQR-Sd-0md">
+            <objects>
+                <viewController id="X8C-Tj-fsD" customClass="FourthViewController" customModule="BruerFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jqq-b8-RT7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Primitive Camping Overlooking Grand Tetons" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UdC-a9-oZ3">
+                                <rect key="frame" x="20" y="56" width="480" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IbS-Uy-oZN">
+                                <rect key="frame" x="20" y="158" width="374" height="704"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">National Park – Wyoming
+ 
+We wanted to find an epic camp spot. Bonus if it came with a view of the Tetons! Between the help of Instagrammers and our AllStays app, we were able to find a great site. The drive up was a little rough, but even with 2-wheel drive we were totally fine. When you initially pull into the “site” at the marker, you can drive past multiple sites and find the further site that sits on the edge of this little “mountain”. It has a perfect flat spot for vehicles, where we fit our car and a Dodge 1500. The site also had a pre-made fire ring of rocks, and the most OUTSTANDING view of the Tetons. Seriously, even compared to the views within the park, this was better.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxL-eY-n9w">
+                                <rect key="frame" x="297" y="120" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Home">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ziB-jt-SOL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y5e-xT-pxd"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dp8-We-1MV"/>
+                    <connections>
+                        <segue destination="jB4-aK-FpR" kind="show" identifier="fourthLink" id="ORc-Ai-anX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nn5-UR-PSI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3673.913043478261" y="49.553571428571423"/>
+        </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="eFx-D5-lPZ">
+            <objects>
+                <viewController id="jB4-aK-FpR" customClass="FifthViewController" customModule="BruerFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bzG-y4-D9T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Ec-FB-TLp">
+                                <rect key="frame" x="20" y="164" width="374" height="698"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Although these hot springs were a PAIN to find, the pool was so worth it. It is right off the highway, only about a 1-minute walk from where you park your car. The pool is about 12 feet wide and 4 feet deep. It also isn’t overwhelmingly hot, as some hot springs are. You can find certain parts of the pool that are hotter, as well as certain parts that are a little cooler, depending on your taste. There is some trash around the area but it wasn’t as bad as we anticipated. While we were there, we met a nicer older couple that we chatted with happily for about 2 hours. We were so busy relaxing in the hot springs that we only took one photo.
+ 
+Klondike Highway (Hwy 2)– driving from Canada and entering the town of Skagway, Alaska
+When we drove up to Alaska in June, we didn’t even realize we were entering the state on a less-popular route. We simply thought we’d enter Alaska near the southern portion of the state and make our way north. (**Note: we did end up having to pay for a $125 ferry ticket to get to Haines**) We saw so much wildlife and the highway was bordered with these beautiful purple flowers for as far as you could see.
+ 
+We were surrounded by so many mountains that, at one point, we couldn’t even tell which mountains were located in Canada and which were located in Alaska.
+ 
+After we left Canadian territory, there was a 20-or-so mile stretch of land before we hit the American customs to enter Alaska. This was one of the most beautiful stretches we’ve driven to this day. There was a huge canyon that the road winded down and you could see all the land was at a downward slope heading towards the ocean. It was as if we drove down AND into this little, cute town called Skagway. It ended up being one of our favorite places in all of Alaska.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Milford Hot Springs and Klondike Highway" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNe-R9-u7l">
+                                <rect key="frame" x="20" y="56" width="276" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kax-GB-t1v">
+                                <rect key="frame" x="297" y="91" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Home">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="S7o-Oi-vha"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NPV-Fz-r3u"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lDD-hD-g0W"/>
+                    <connections>
+                        <segue destination="GNe-Ow-OTa" kind="show" identifier="fifthLink" id="iiV-5e-jYV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yo4-s6-j3s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1440.5797101449277" y="715.84821428571422"/>
+        </scene>
+        <!--Sixth View Controller-->
+        <scene sceneID="oCI-ms-4tx">
+            <objects>
+                <viewController id="GNe-Ow-OTa" customClass="SixthViewController" customModule="BruerFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0bM-vt-JNc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bTh-1m-cFb">
+                                <rect key="frame" x="20" y="164" width="374" height="698"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">We knew that we wanted to experience one of these epic “14-ers” that everybody in Colorado kept talking about. We also knew that hiking one without training simply wasn’t in the cards for us, due to the elevation. What we were able to do instead was drive the Mount Evans Scenic Byway to the near top of this mountain, then walk the last 20 minutes or so.
+We ended up at an elevation of a whopping 14,265’. The view was gorgeous, the air was crisp, and we were able to finally experience a 14-er. The drive up was even incredible. There were mountain goats, crazy trees, bodies of water, areas with snowfall, and rolling green hills. By gaining so much elevation during the drive, you’re able to experience the changes of environment as you climb. 10/10 would recommend as a must-do if you’re visiting Colorado.
+
+Although this sounds very general, we wanted to give a shout out to this national forest. Our entire trip relies on free, dispersed camping in national forests. To give you an idea, we find ourselves sleeping in national forests 6 days of the week, if not all 7. They’re important. With that being said, we’ve experienced sites in national forests that are literally just a place to pull off. We’ve also experienced sites that have running water, toilets, fire rings, picnic tables, etc. Generally speaking, Custer Gallatin National Forests had the best sites to offer as far as amenities, cleanliness, and quality of site. Most of our sites were next to running rivers or beautifully remote lakes. Additionally, there were hikes ALL over. We ended up staying in various parts of the forest and would recommend all of them.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mount Evans!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0d-hw-HNO">
+                                <rect key="frame" x="20" y="108" width="325" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGN-fG-PSs">
+                                <rect key="frame" x="297" y="117" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Home">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="h3u-Og-Egz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yy7-Km-VCO"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wc0-Mr-HOd"/>
+                    <connections>
+                        <segue destination="56U-hL-G0K" kind="show" identifier="sixthLink" id="8oP-Ts-ajY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbY-dx-raf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2211.594202898551" y="715.84821428571422"/>
+        </scene>
+        <!--Seventh View Controller-->
+        <scene sceneID="mfZ-7i-P1Z">
+            <objects>
+                <viewController id="56U-hL-G0K" customClass="SeventhViewController" customModule="BruerFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VEm-Az-YTC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="09c-Gx-1bW">
+                                <rect key="frame" x="20" y="181" width="374" height="681"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blog Entry 6!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcD-vr-9Rf">
+                                <rect key="frame" x="20" y="103" width="282" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FPa-gf-Z95"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cUv-C5-3OV"/>
+                    <connections>
+                        <segue destination="iad-I0-Bwe" kind="show" identifier="seventhLink" id="Rdr-x5-1mu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaB-Da-fIv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2957.971014492754" y="703.79464285714278"/>
+        </scene>
+        <!--Eighth View Controller-->
+        <scene sceneID="ULN-LG-ecD">
+            <objects>
+                <viewController id="iad-I0-Bwe" customClass="EighthViewController" customModule="BruerFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VZJ-7k-oE3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="doQ-tp-0Yy">
+                                <rect key="frame" x="20" y="182" width="374" height="680"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blog Entry 7!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0WA-H4-A22">
+                                <rect key="frame" x="20" y="117" width="317" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0tp-aF-3Ri"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eT4-kr-lfL"/>
+                    <connections>
+                        <segue destination="fY4-Ac-Qkr" kind="show" identifier="eighthLink" id="gMw-9S-uPQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yUc-2k-sIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3673.913043478261" y="704.46428571428567"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cmq-F2-M38">
+            <objects>
+                <viewController id="5Io-Na-HPw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QOL-7f-ZLp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgo-kS-WnQ">
+                                <rect key="frame" x="145" y="96" width="124" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back to Home"/>
+                                <connections>
+                                    <segue destination="wc4-6P-aJP" kind="show" id="gUa-aB-tlN"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gpN-kS-9FO">
+                                <rect key="frame" x="20" y="396" width="374" height="412"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">Welcome to our blog!
+
+Join us as we embark on adventure! It has always been a dream of our’s to try out van life. This blog will cover all things van life: including van creation, tips for living on the road, working remotely, making money through blogs and social media, travel guides for trip locations, and of course a little bit about our personal lifestyles. 
+
+Who We Are:
+
+Lehlo is made of two main members: Rheo and Lilly (hence the name.) Rheo is a young, hairy, dairy addicted computer scientist. Lilly is a ski and snowboard instructor. Oh, and of course both are now website creators and blog writers! Rheo and Lilly both attended and graduated from Appalachian State University. Lilly got her bachelor’s in Social Work and Rheo in Computer Science. They met at a dry cleaners in Boone, North Carolina and have been inseparable since. They both had the intention of living in a van before they met each other. Now, they are an unstoppable team. 
+Lilly worked as a Data Specialist in a homeless shelter for a short time, but quickly discovered the sedentary life was not here for her. Lilly grew up in a rural town in western North Carolina. She comes from a conservative Southern Baptist Family… surprising, no? She has extensive experience bottle feeding neonatal kittens as she grew up working closely with a couple Humane Societies.  
+
+Rheo attended Engineer school before deciding to pursue computer science as a means to be able to travel long term.  His main interests are traveling and working on cars. Rheo grew up in a Neo-Luddite Bohemian family in an off the grid house in Florida keys.
+</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homepagepic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="b01-WF-NBB">
+                                <rect key="frame" x="20" y="140" width="374" height="248"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Our Blog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNE-wt-VYs">
+                                <rect key="frame" x="20" y="43" width="374" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cN6-Qk-HiK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="4L9-T6-1cP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zB7-VR-tEJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507.24637681159425" y="715.84821428571422"/>
+        </scene>
+        <!--Ninth View Controller-->
+        <scene sceneID="iv9-Ii-7vz">
+            <objects>
+                <viewController id="fY4-Ac-Qkr" customClass="NinthViewController" customModule="BruerFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I2q-LI-bVH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7tw-84-8nV">
+                                <rect key="frame" x="20" y="175" width="374" height="687"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">We spent a few days exploring Golden and all that it has to offer. The city is fairly small and we were able to walk around the downtown area in a matter of 2 hours. For the surprising size, it’s the home of the Coors Brewery. This fact is made very obvious, as Coors marketing is literally all over the town.
+There is a main road with an adorable “Welcome to Golden” arch across it, that is perfect for window shopping, treats, etc. We stopped at a very cute porch/beer garden and enjoyed a cold IPA with live music. We made our way down to a small river called Clear Creek that runs through the city. Just past Clear Creek we found Lions Park, where we spent multiple days. There was a huge field for us to play Frisbee and lay down a blanket/play Uno. A wonderfully maintained path runs along the river that was perfect for our morning walks. Overall, the city was very charming and one of our favorites. It was the first place we ever thought, “huh – I could maybe see us living here one day.”</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Golden, Colorado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phc-zd-gV7">
+                                <rect key="frame" x="20" y="88" width="337" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXd-UA-tvk">
+                                <rect key="frame" x="297" y="112" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to Home">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="LQR-z0-ft6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8qo-lh-raH"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bdt-fZ-dLG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C2F-uZ-ae0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531.8840579710145" y="715.84821428571422"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="M2r-aO-ZxQ">
+            <objects>
+                <viewController id="wc4-6P-aJP" customClass="HomeViewController" customModule="BruerFinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QdT-Nx-A2h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCY-7M-xmz">
+                                <rect key="frame" x="20" y="410" width="224" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="About Us" backgroundImage="stop" catalog="system">
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5Io-Na-HPw" kind="show" id="Scz-2m-9Yh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lehlo Blog App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntp-Xv-Ojc">
+                                <rect key="frame" x="20" y="125" width="374" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5T-Lz-ldT">
+                                <rect key="frame" x="222" y="409" width="192" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Blogs" backgroundImage="rectangle" catalog="system"/>
+                                <connections>
+                                    <segue destination="Xzx-hV-of3" kind="show" id="1qm-tg-1rB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="de3-G6-Jgc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="44X-W5-TwL"/>
+                    <connections>
+                        <outlet property="aboutButton" destination="yCY-7M-xmz" id="NGS-PK-Qu9"/>
+                        <outlet property="blogButton" destination="A5T-Lz-ldT" id="3NT-mg-XZM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rJl-IT-PuN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507.24637681159425" y="49.553571428571423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ht9-4Y-j5L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xzx-hV-of3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Oja-wR-nBO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kwa-Dn-bTn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Xcf-Ih-wOb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VCM-Ph-ZZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="531.8840579710145" y="49.553571428571423"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gUa-aB-tlN"/>
+        <segue reference="gMw-9S-uPQ"/>
+        <segue reference="Rdr-x5-1mu"/>
+        <segue reference="8oP-Ts-ajY"/>
+        <segue reference="iiV-5e-jYV"/>
+        <segue reference="ORc-Ai-anX"/>
+        <segue reference="UWu-Te-zIK"/>
+        <segue reference="VGP-7m-JPT"/>
+        <segue reference="LQR-z0-ft6"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="homepagepic.jpg" width="2996.25" height="1573.5"/>
+        <image name="rectangle" catalog="system" width="128" height="93"/>
+        <image name="stop" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
